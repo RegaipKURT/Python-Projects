@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 from tkinter import *
 import matplotlib.pyplot as plt
-import os
 
 sozluk={"a":0,"b":0,"c":0,"ç":0,"d":0,"e":0,"f":0,"g":0,"ğ":0,"h":0,"ı":0,"i":0,"j":0,"k":0,"l":0,"m":0,"n":0,"o":0,"ö":0,"p":0,"r":0,"s":0,"ş":0,"t":0,"u":0,"ü":0,"v":0,"w":0,"x":0,"y":0,"z":0}
 sozluk2={"a":0,"b":0,"c":0,"ç":0,"d":0,"e":0,"f":0,"g":0,"ğ":0,"h":0,"ı":0,"i":0,"j":0,"k":0,"l":0,"m":0,"n":0,"o":0,"ö":0,"p":0,"r":0,"s":0,"ş":0,"t":0,"u":0,"ü":0,"v":0,"w":0,"x":0,"y":0,"z":0}
-dizin = os.path.curdir
+
 def olustur():
     global metin
     metin=acikentry.get(0.0, END).lower()
@@ -22,7 +21,7 @@ def olustur():
     plt.xlabel('Harfler')
     plt.title('Açık Metin Harf Frekansı Grafiği')
     plt.show()
-    plt.savefig(dizin,"Acik_Metin_Grafik.png")
+    plt.savefig("Acik_Metin_Grafik.png")
     plt.close()
 
     for i in metin2:
@@ -36,7 +35,7 @@ def olustur():
     plt.xlabel('Harfler')
     plt.title('Şifreli Metin Harf Frekansı Grafiği')
     plt.show()
-    plt.savefig(dizin,"Gizli_Metin_Grafik.png")
+    plt.savefig("Gizli_Metin_Grafik.png")
     plt.close()
 
 pencere = Tk()
