@@ -10,33 +10,35 @@ def olustur():
     metin=acikentry.get(0.0, END).lower()
     global metin2
     metin2=sifrelientry.get(0.0, END).lower()
-    for i in metin:
-        if i in sozluk:
-            sozluk[i] = sozluk[i] + 1
-        else:
-            pass
-    plt.bar(range(len(sozluk)), list(sozluk.values()), align='center')
-    plt.xticks(range(len(sozluk)), list(sozluk.keys()))
-    plt.ylabel('Harf Sayısı')
-    plt.xlabel('Harfler')
-    plt.title('Açık Metin Harf Frekansı Grafiği')
-    plt.show()
-    plt.savefig("Acik_Metin_Grafik.png")
-    plt.close()
-
-    for i in metin2:
-        if i in sozluk2:
-            sozluk2[i] = sozluk2[i] + 1
-        else:
-            pass
-    plt.bar(range(len(sozluk2)), list(sozluk2.values()), align='center')
-    plt.xticks(range(len(sozluk2)), list(sozluk2.keys()))
-    plt.ylabel('Harf Sayısı')
-    plt.xlabel('Harfler')
-    plt.title('Şifreli Metin Harf Frekansı Grafiği')
-    plt.show()
-    plt.savefig("Gizli_Metin_Grafik.png")
-    plt.close()
+    def acik_metin():
+        for i in metin:
+            if i in sozluk:
+                sozluk[i] = sozluk[i] + 1
+            else:
+                pass
+        plt.bar(range(len(sozluk)), list(sozluk.values()), align='center')
+        plt.xticks(range(len(sozluk)), list(sozluk.keys()))
+        plt.ylabel('Harf Sayısı')
+        plt.xlabel('Harfler')
+        plt.title('Açık Metin Harf Frekansı Grafiği')
+        #plt.show()
+        plt.savefig("Acik_Metin_Grafik.png")
+        plt.close()
+    def gizli_metin():
+        for i in metin2:
+            if i in sozluk2:
+                sozluk2[i] = sozluk2[i] + 1
+            else:
+                pass
+        plt.bar(range(len(sozluk2)), list(sozluk2.values()), align='center')
+        plt.xticks(range(len(sozluk2)), list(sozluk2.keys()))
+        plt.ylabel('Harf Sayısı')
+        plt.xlabel('Harfler')
+        plt.title('Şifreli Metin Harf Frekansı Grafiği')
+        #plt.show()
+        plt.savefig("Gizli_Metin_Grafik.png")
+        plt.close()
+    acik_metin(), gizli_metin()
 
 pencere = Tk()
 pencere.title("Sezar Şifre Kırma")
