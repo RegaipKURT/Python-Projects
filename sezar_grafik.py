@@ -21,8 +21,8 @@ def olustur():
         plt.ylabel('Harf Sayısı')
         plt.xlabel('Harfler')
         plt.title('Açık Metin Harf Frekansı Grafiği')
-        #plt.show()
         plt.savefig("Acik_Metin_Grafik.png")
+        plt.show()
         plt.close()
     def gizli_metin():
         for i in metin2:
@@ -35,8 +35,8 @@ def olustur():
         plt.ylabel('Harf Sayısı')
         plt.xlabel('Harfler')
         plt.title('Şifreli Metin Harf Frekansı Grafiği')
-        #plt.show()
         plt.savefig("Gizli_Metin_Grafik.png")
+        plt.show()
         plt.close()
     acik_metin(), gizli_metin()
 
