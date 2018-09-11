@@ -21,7 +21,8 @@ def temizle(tumkelimeler):
             sembolsuz.append(kelime) #sembolsüz kelimeleri sembolsuz listesine ekleyecek
     return sembolsuz # döndürdüğü bu listenin içindeki her bir kelimeyi tumkelimeler listesine for döngüsüyle ekleyeceğiz.
 #URL'Yİ TANIMLAYALIM
-url = "http://www.nationalgeographic.com.tr/makale/eylul_2018/katienin-yeni-yuzu/3968"
+
+url = (str(input("Lütfen site linkini giriniz:")))
 #KELİME LİSTESİ OLUŞTURALIM. İLERDE KELİMELERİ APPEND İLE İÇİNE EKLEYECEĞİZ.
 tumkelimeler = []
 #REQUSETS MODÜLÜ İLE URL ADRESİNİN KAYNAK BİLGİLERİNİ ÇEKİYORUZ.

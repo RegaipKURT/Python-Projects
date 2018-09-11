@@ -2,7 +2,7 @@
 İlk örneğimizi recursive programlama şeklinde yazalım.
 Recursive kelimesi türkçeye "öz yinelemeli" olarak çevrilebilir.
 Örnek verecek olursak 5! = 5 * 4! olarak yazılabilir. 4! = 4 * 3!, 3!=3*2!, 2!=2*1!, 1!=1*0!
-Biz fak diye bir fonksiyon tanımlayıp özyinelemeli olarak yazarsak ve 0!'in değerinin ne olduğunu
+Biz fak diye bir fonksiyon tanımlayıp özyinelemli olarak yazarsak ve 0!'in değerinin ne olduğunu
 programa söylersek, recursive tanımlama sayesinde program geriye kalan değerleri 
 yazdığmız program kendisi hesaplayabilecektir. Bu şekilde program yazmak insanın düşünme 
 yapısına çok daha yakındır. İnsan beyni recursive düşünmeye daha yatkındır.

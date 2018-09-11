@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 import matplotlib.pyplot as plt
 import sys
 
@@ -18,7 +19,7 @@ using in encrypting process. Sozluk2 dict will take the crypted message. Then we
 it and visualize with matplotlib pyplot libraries. Finally, after the save graphics 
 we can compare both of these graphics and discover shifting. If we want, 
 we can do a reverse shifting process and we can encrypt the message.
-WE DID NOT EXPLAIN THE ENCRYPTING PROCESS. ONLY GRAPHIC VISUALITAION FOR COMPREHENSIVE TO ALGORITM.
+WE DID NOT EXPLAIN THE ENCRYPTING PROCESS. ONLY GRAPHIC VISUALITAION FOR COMPREHENSION TO ALGORITM.
 """
 
 """
@@ -48,8 +49,8 @@ def acikmetin():
     plt.ylabel('Harf Sayısı')
     plt.xlabel('Harfler')
     plt.title('Harf Frekansı Grafiği')
-    plt.show()
     plt.savefig("Acik_Metin_Grafik.png")
+    plt.show()
 
 def gizlimetin():
     for i in metin2:
@@ -63,8 +64,8 @@ def gizlimetin():
     plt.ylabel('Harf Sayısı')
     plt.xlabel('Harfler')
     plt.title('Harf Frekansı Grafiği')
-    plt.show()
     plt.savefig("Gizli_Metin_Grafik.png")
+    plt.show()
 
 acikmetin()
 gizlimetin()

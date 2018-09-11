@@ -1,7 +1,6 @@
 #!/usr/bin/env/ python
 # -*- coding: utf-8 -*-
-from termcolor import colored
-
+import sys
 class calisan():
 
     def __init__(self,isim = "Bilinmeyen Çalışan", maas = "Asgari Ücret", departman = "Şirket"):
@@ -38,5 +37,7 @@ class yonetici(calisan):
 
 calisan1 = calisan("Mehmet Baltacı", 2500, "İnsan")
 calisan1.yazdir()
+#calisan2 = calisan(sys.argv[1],int(sys.argv[2]),sys.argv[3])
+#calisan2.yazdir()
 kel = yonetici()
 kel.yazdir()

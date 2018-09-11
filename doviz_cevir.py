@@ -17,4 +17,4 @@ print (jsonverisi)
 
 print (float(jsonverisi["rates"][ikinci]))
 
-Fixerio.latest()
+

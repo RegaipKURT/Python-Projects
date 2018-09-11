@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+from termcolor import colored
 
 imdburl = "https://www.imdb.com/chart/top"
 r = requests.get(imdburl)
@@ -16,4 +17,5 @@ for film in film_tablosu:
     film_basligi = film.find_all("td", {"class": 'titleColumn'})
     filmismi = film_basligi[0].text
     filmismi = filmismi.replace("\n","")
-    print (filmismi,"\n-------------------------------------------")
+    print (colored(filmismi,"cyan"))
+    
