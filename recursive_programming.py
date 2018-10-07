@@ -8,6 +8,8 @@ yazdığmız program kendisi hesaplayabilecektir. Bu şekilde program yazmak ins
 yapısına çok daha yakındır. İnsan beyni recursive düşünmeye daha yatkındır.
 Şimdi bir recursive faktöryel hesaplama programı yazalım...
 """
+#BUNU YAPMAMIZDAKİ AMAÇ FARKLI PROGRAMLAMA TEKNİKLERİNİ GÖSTERMEKTİR.
+#YANİ BİR İŞİ YAPMANIN HER ZAMAN BİRDEN FAZLA YOLU VARDIR. O YOL SİZİN SEÇİMİNİZ.
 import profile #bu modülü fonksiyonun çalışma süresini ölçmek için koyuyoruz.
 
 def fak(n): #Fonksiyonumuzu fak ismiyle tanımladık
