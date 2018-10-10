@@ -29,3 +29,5 @@ def logo():
     time.sleep(0.5)
     cprint("                                             ",color="green")
 
+yukleme()
+logo()
