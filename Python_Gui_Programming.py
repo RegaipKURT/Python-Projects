@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 #PENCERE OLUŞTURMA
-pencere = Tk()
+pencere = Tk() # Pencere Objesi
 pencere.title("Program")
 pencere.geometry("650x650")
 
