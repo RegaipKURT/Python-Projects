@@ -5,6 +5,8 @@ pencere = Tk()
 pencere.title("Program")
 pencere.geometry("650x650")
 
+#KULLANMAK İSTEDİĞİNİZ KISIMLARIN TIRNAKLARINI KALDIRIN.
+
 """
 # alt ve üst frameler oluşturup ilerde bu bölgelere bi şeyler koyacağız.
 #"INVISIBLE CONTAINERS" deniliyor bu frame'lere. Bu terim mantığını anlamamı sağlıyor.
