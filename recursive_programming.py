@@ -65,3 +65,10 @@ print ("Listeli Sonuç:",fakto(c))
 
 print ("\n\nLİSTELERLE ÇALIŞILDIĞINDA FONKSİYONUN ÇALIŞTIRMA SÜRESİ DEĞERLERİ:")
 profile.run('fakto(c)')
+
+#REDUCE Fonkisyonuyla prgoramı yazmak daha mantıklı olabilir.
+#bu tür durumlarda reduce fonksiyonunun kullanılması kod verimliliği açısından önemli olacaktır.
+from functools import reduce
+liste = list(range(1,c+1))
+a = reduce(lambda x,y: x*y, liste)
+print (a)
