@@ -72,3 +72,10 @@ from functools import reduce
 liste = list(range(1,c+1))
 a = reduce(lambda x,y: x*y, liste)
 print (a)
+
+#şimdi reduce fonksiyonunun çalışma süresini ölçüp çalışma hızına bakalım
+#her ne kadar diğerlerinden uzun sürede çalışmış olsa da yine de verimlidir.
+#üstelik lambda fonksiyonuyla kullandığımız için bellekte bir fonksiyon tutmadık
+#tek tuttuğumuz değişken de sonucun kendisi. hatta bazen onu tutmaya bile gerek olmayacaktır.
+print ("\n\nLİSTELERLE ÇALIŞILDIĞINDA FONKSİYONUN ÇALIŞTIRMA SÜRESİ DEĞERLERİ:")
+profile.run('reduce(lambda x,y: x*y, liste)')
