@@ -1,6 +1,5 @@
 import threading
 import time
-from termcolor import colored
 
 def thr(n, name):
     print("\nMerhaba, ben {}, {} saniye bekleyeceğim...\n".format(name, n))
