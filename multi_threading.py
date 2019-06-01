@@ -26,4 +26,4 @@ tr2.start()
 tr3.start()
 #burada 1. thread bittikten sonra 2. thread çalışacak fakat 3. thread bunlardan bağımsız olarak çalışmaya başlayacak.
 #böylece birbirine bağımlı ve bağımsız thread ler aynı anda çalışmış olacak. bağımlı olanlar birbirini bekleyecek.
-#2. thread 1. ye bağımlı yani, 1. nin bekliyor. 3. thread diğerlerinden bağımsız.
+#2. thread 1. ye bağımlı yani, 1. nin bekliyor. 3. thread diğerlerinden bağımsız çalışıyor.
