@@ -1,6 +1,6 @@
 from pushover import Client
 import sys
-client = Client("uAaiJgBuuy62vG8KYPtsgGgtu291fH", api_token="ae5d2o94ssufeiyy4h8z242124iz9z")
+client = Client("client", api_token="api")
 a = "Bu bir deneme bildirim mesajıdır. Lütfen cevap vermeyiniz. Bu bildirimi aldıysanız programınız düzgün çalışıyor demektir. \nİyi Günler..."
 
 client.send_message(a, title="Bildirim Başarılı")
