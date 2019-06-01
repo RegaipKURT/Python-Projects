@@ -7,7 +7,7 @@ def bekleme():
     print("beklenecek thread bitti")
 
 def ana_thread():
-    tr1.join()
+    tr1.join() #1. thread bittikten sonra 2. threadi çalıştırmak için join ile ilk görevi bekledik.
     print("ana thread başladı")
     time.sleep(7)
     print("ana_thread bitti.")
@@ -24,3 +24,6 @@ tr3 = threading.Thread(target=yan_gorev, name="yan_thr")
 tr1.start()
 tr2.start()
 tr3.start()
+#burada 1. thread bittikten sonra 2. thread çalışacak fakat 3. thread bunlardan bağımsız olarak çalışmaya başlayacak.
+#böylece birbirine bağımlı ve bağımsız thread ler aynı anda çalışmış olacak. bağımlı olanlar birbirini bekleyecek.
+#2. thread 1. ye bağımlı yani, 1. nin bekliyor. 3. thread diğerlerinden bağımsız.
