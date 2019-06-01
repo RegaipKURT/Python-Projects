@@ -69,7 +69,7 @@ profile.run('fakto(c)')
 #REDUCE Fonkisyonuyla prgoramı yazmak daha mantıklı olabilir.
 #bu tür durumlarda reduce fonksiyonunun kullanılması kod verimliliği açısından önemli olacaktır.
 from functools import reduce
-liste = list(range(1,c+1))
+liste = list(range(1,6))
 print (reduce(lambda x,y: x*y, liste))
 
 #şimdi reduce fonksiyonunun çalışma süresini ölçüp çalışma hızına bakalım
