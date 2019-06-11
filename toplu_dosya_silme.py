@@ -18,7 +18,10 @@ sayi = 0
 if kabul == "y" or kabul == "Y":
     for i in dosyalar:
         if i.endswith(dosya_turu):
-            os.system("rm -r {}".format(i))
+            if os.name == "posix":
+                os.system("rm -r {}".format(i))
+            elif os.name == "nt":
+                os.system("del /f {}".format(i))
             sayi += 1
         else:
             pass
