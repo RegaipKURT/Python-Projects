@@ -6,6 +6,7 @@ from termcolor import colored
 import time
 
 sifre_asil = "b74d04ca135c86e95f82d058f6999d65"
+#basit bir sifre md5 decrypter ile hemen bulunabilir.
 
 def sor():
     global a
