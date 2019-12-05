@@ -2,6 +2,9 @@ from threading import Thread
 import datetime
 
 def Mukemmel_Bul():
+    """
+    Kendisi dışındaki pozitif bölenlerinin toplamı, kendisine eşittir.
+    """
     for i in range(1,10000):
         bolenler = []
         for k in range(1,i):
@@ -13,6 +16,10 @@ def Mukemmel_Bul():
 
 
 def HEMukemmel_Bul(): # HAFİFÇE EKSİK MÜKEMMEL SAYI
+    """
+    2'nin kuvvetleri böyle sayılardır. 
+    Kendisi dışındaki pozitif bölenlerinin toplamı, kendisinden 1 eksiktir.
+    """
     for i in range(1,10000):
         bolenler = []
         for k in range(1,i):
@@ -23,7 +30,11 @@ def HEMukemmel_Bul(): # HAFİFÇE EKSİK MÜKEMMEL SAYI
             print(i)
 
 
-def HAMukemmel_Bul(): # HAFİFÇE ARTIK MÜKEMMEL SAYI
+def HAMukemmel_Bul(): # HAFİFÇE ARTIK MÜKEMMEL SAYI 
+    """
+    Kendisi dışındaki pozitif bölenlerinin toplamı, kendisinden 1 fazladır.
+    Böyle bir sayı bugüne kadar bulunamamıştır ama yokluğu veya varlığı da kanıtlanamamıştır.
+    """
     for i in range(1,10000):
         bolenler = []
         for k in range(1,i):
@@ -32,6 +43,8 @@ def HAMukemmel_Bul(): # HAFİFÇE ARTIK MÜKEMMEL SAYI
 
         if sum(bolenler) == i+1:
             print(i)
+        elif i % 10000 == 0:
+            print(i, " sayısına kadar sonuç yok!")
     
 thr1 = Thread(target=Mukemmel_Bul, name="Mukemmeller")
 thr2 = Thread(target=HEMukemmel_Bul, name="Hafifçe Eksik Mükemmeller")
