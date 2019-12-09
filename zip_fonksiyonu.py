@@ -25,8 +25,8 @@ for (a, b, c) in zip(num, color, value):
      print (a, b, c) 
 
 
-# Eğer kısa olan liste bittikten sonra da devam etsin istersek izip_longest
-# yani izip uzun fonksiyonunu kullanabiliriz.
+# Eğer kısa olan liste bittikten sonra da devam etsin istersek zip_longest
+# yani zip uzun fonksiyonunu kullanabiliriz.
 print("En uzun liste bitene kadar çalışan zip_longest fonksiyonu!")
 for (a, b, c) in itertools.zip_longest(num, color, value): 
     print (a, b, c)
