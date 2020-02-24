@@ -103,11 +103,18 @@ def subtract_1():
             x -= 1
     print("1 çıkarıldı.")
 
+
+#bu fonksiyonda ise with kullanmak yerine kendimiz kilit mekanizmasını uygulayıp
+# işlem bittiğinde kilidi kaldıralım.
 def subtract_4():
     global x
-    with lock:
-        for i in range(count):
-            x -= 4
+    #with kelimesiyle yapılan iş aslında işlem yapılmaya başlandığında
+    #aşağıdaki gibi acquire ile kilitlemektir.
+    lock.acquire()
+    for i in range(count):
+        x -= 4
+    #işlem bittiğinde ise release ile kilit açılır.
+    lock.release()
     print("4 çıkarıldı.")
 
 #lock tanımlı fonksiyonlarda thread çalıştırılması ve sonucu
