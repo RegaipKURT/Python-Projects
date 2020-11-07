@@ -1,12 +1,30 @@
 """
-Bu kodlar meta programlama egzersizi için yazılmıştır.
-Metaprogramlama basitçe programları programlamak demektir.
-Yani bir programı programlamak istediğimizde veya 
-yazdığımız programın kendisini programlamak istediğimizde
-metaprogramlama denilen kavramdan faydalanırız.
+Metaprogramlama birçok programlama dilinde bulunur. 
+
+Metaprogramlama en basit haliyle bir tür kod denetleme aracıdır.
+Yazdığımız kodun içeriğini program çalışırken içerden veya dışardan
+değiştirmek veya denetlemek istediğimizde bu yapıyı kullanırız.
 
 Bu programı çalıştırmak için bulunduğunuz dizinde deneme.py ve bos_dosya.py isimli 
 iki adet python dosyası oluşturun. Daha sonra bu python programlarını bu dosya üzerinden programlayalım.
+
+deneme.py içeriği şöyle olsun:
+<--
+def selamla(*args, **kwargs):
+    print("Hoşgeldiniz", kwargs["isim"], kwargs["soyad"] + "!")
+
+a = "Kemal"
+def w():
+    global a
+    import os
+    os.system("whoami")
+    print(a)
+
+if __name__ == '__main__':
+    selamla(isim="Regaip", soyad="Kurt")
+
+-->
+
 """
 
 with open("bos_dosya.py","a") as f:
