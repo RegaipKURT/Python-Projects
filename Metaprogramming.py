@@ -121,8 +121,8 @@ if __name__ == '__main__':
                 def yaz(self):
                     print(dict["__qualname__"])
                 #Soru: Bu ne işe yarar? Diyebiiliriz.
-                #Cevap: Örneğin IDE'ler bizim yazdığımız kodu metaprogramlama ile tıpkı böyle denetler. 
-                # Böylece hatalı yerleri gösterirler mesela.
+                #Cevap: Örneğin bir framework yazarken sınıfları denetleme ve düzenleme ihtiyacı oluşacaktır. 
+                # Böylece belirli sınıflar üzerinde işlem yapabilme olanağı sağlanmış olur.
                 new_dict["yaz"] = yaz
             return type.__new__(cls, what, bases, new_dict)
     class yreg(metaclass=StringMeta):
