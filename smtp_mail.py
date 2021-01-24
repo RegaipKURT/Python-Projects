@@ -17,5 +17,4 @@ mail.sendmail(gonderen,alan,mesaj) #Son olarak mail gönderme işlemi
 Bu kodların çalışabilmesi için Google'dan daha az güvenli uygulamalardan erişime
 izin ver seçeneğini açmamız lazım. Bunun için şu linkten izin verebiliriz:
 https://myaccount.google.com/lesssecureapps?pli=1
-Ayrıca türkçe karakter kullandığımda sıkıntı çıkardı.(Python 3 ile denemedim.)
-"""
+Ayrıca türkçe karakter kullanıldığında hata verecektir!
