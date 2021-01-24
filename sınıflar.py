@@ -1,7 +1,8 @@
 import random
 
 class dusman:
-
+    
+    #yapıcı metod (constructor)
     def __init__(self, isim = "Düşman", can = 100, guc = 10, mermi = 40):
         self.isim = isim
         self.can = can
