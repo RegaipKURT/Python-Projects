@@ -18,7 +18,8 @@ kare = lambda x: x**2
 kareliste = list(map(kare, liste))
 print("Karelerin listesi:",kareliste)
 
-#reduce fonksiyonu ise python 3 sürümünde yoktur. (2 ile kullanabiliriz.)
+#reduce fonksiyonu ise python 3 sürümünde builtin olarak yoktur yoktur. (2 ile built-in kullanabiliriz.)
+#python 3 için functools kütüphanesinin import edilmesi gerekir
 #reduce listenin ilk iki elemanını alıp, uyguladığı fonksiyondan döndürdüğü değerle,
 #bir sonrakini işleme sokar. Lİste bitinceye kadar sırasıyla sonuna kadar ikişerli olarak gider.
 """
